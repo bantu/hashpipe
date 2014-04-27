@@ -25,5 +25,5 @@ if [ -e "$FILE_HASH" ]; then
     exit 1
 fi
 
-CHECKSUM=$(tee "$FILE" < /dev/stdin | sha256sum | awk '{print $1}')
+CHECKSUM=$(tee "$FILE" < /dev/stdin | sha256sum | cut -d " " -f 1)
 echo "$CHECKSUM  $FILE_BASE" > "$FILE_HASH"
