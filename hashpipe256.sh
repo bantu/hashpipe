@@ -1,7 +1,7 @@
 #!/bin/sh
-# This file is part of hashpipe by Andreas Fischer <af@bantuX.org>.
-# For the full copyright and license information, please view the LICENSE
-# file that was distributed with this source code.
+# @author    Andreas Fischer <af@bantuX.org>
+# @copyright 2014 Andreas Fischer
+# @license   http://www.opensource.org/licenses/mit-license.html MIT License
 
 SCRIPT=$(basename "$0")
 if [ "$#" -ne 1 ]; then
